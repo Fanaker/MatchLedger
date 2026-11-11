@@ -149,7 +149,7 @@ La automatización de GitHub Actions ejecuta ambas comprobaciones en cada push y
 
 ## Alcance y decisiones
 
-Este es un proyecto de portafolio y aprendizaje, no un producto bancario certificado. Usa reglas deterministas, no un modelo de IA; no incluye login multiusuario, conexiones directas con bancos ni conciliación de archivos Excel `.xlsx`. Las sugerencias ambiguas requieren validación manual. Los importes se normalizan a dos decimales y las coincidencias se determinan mediante referencias, fechas, importes y similitud de texto.
+Este sistema es un prototipo funcional de alcance educativo, no un producto bancario certificado. Usa reglas deterministas, no un modelo de IA; no incluye login multiusuario, conexiones directas con bancos ni conciliación de archivos Excel `.xlsx`. Las sugerencias ambiguas requieren validación manual. Los importes se normalizan a dos decimales y las coincidencias se determinan mediante referencias, fechas, importes y similitud de texto.
 
 Los movimientos de `sample-data/` son **sintéticos** y su uso está reservado a demostración y pruebas.
 
