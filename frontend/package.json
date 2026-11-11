@@ -1,0 +1,10 @@
+{
+  "name": "matchledger-frontend", "version": "1.0.0", "private": true,
+  "description": "Interfaz React autocontenida para MatchLedger",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs && node scripts/dev.mjs",
+    "check": "node --check src/app.js && node scripts/build.mjs"
+  },
+  "engines": {"node": ">=18"}, "dependencies": {}
+}

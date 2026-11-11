@@ -1,0 +1,10 @@
+import { cpSync, mkdirSync, copyFileSync } from 'node:fs';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+const base=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const dist=resolve(base,'dist');
+mkdirSync(dist,{recursive:true});
+cpSync(resolve(base,'public'),dist,{recursive:true,force:true});
+copyFileSync(resolve(base,'src','app.js'),resolve(dist,'app.js'));
+copyFileSync(resolve(base,'src','styles.css'),resolve(dist,'styles.css'));
+console.log('✓ MatchLedger frontend construido en frontend/dist (sin dependencias remotas)');
